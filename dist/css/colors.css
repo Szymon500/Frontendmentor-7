@@ -1,0 +1,26 @@
+:root {
+	--background-color: hsl(0, 0%, 98%);
+	--elements-color: hsl(0, 0%, 100%);
+	--text-color: hsl(200, 15%, 8%);
+}
+body {
+	background-color: var(--background-color);
+}
+.header,
+.details-box__neighbours-link,
+.back__link,
+.search__select-btn,
+.search__select-region,
+.search__box-input,
+.countries-box__item {
+	background-color: var(--elements-color);
+	color: var(--text-color);
+}
+
+.fa-solid,
+.details-box__content-item-p,
+.details-box__content-header,
+.details-box__neighbours-header{
+    color: var(--text-color);
+}
+

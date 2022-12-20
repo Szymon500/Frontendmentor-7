@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where in the world</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
+    <link rel="stylesheet" href="./dist/css/colors.css">
+    <script src="https://kit.fontawesome.com/53dc7df5e2.js" crossorigin="anonymous"></script>
+    <script src="./dist/js/script.min.js" defer></script>
+    <script src="./dist/js/dark-mode.min.js" defer></script>
+</head>
+
+<body>
+    <!--  @include 'header.kit'-->
+    <main>
+        <section class="search-form">
+            <div class="wrapper">
+                <form class="search">
+
+                    <div class="search__box">
+
+                        <label for="search__box-input" class="search__box-label"><i
+                                class="fa-solid fa-magnifying-glass"></i></label>
+
+                        <input type="text" name="search__box-input" id="search__box-input" class="search__box-input"
+                            placeholder="Search for a country...">
+
+                    </div>
+
+                    <div class="search__select">
+
+                        <div class="search__select-btn">
+                            Filter by Region
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="search__select-region">
+                            <p class="search__select-region-item" data-name="region" data-value="Africa">Africa</p>
+                            <p class="search__select-region-item" data-name="region" data-value="America">America</p>
+                            <p class="search__select-region-item" data-name="region" data-value="Asia">Asia</p>
+                            <p class="search__select-region-item" data-name="region" data-value="Europe">Europa</p>
+                            <p class="search__select-region-item" data-name="region" data-value="Oceania">Oceania</p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+        <section class="countries">
+            <div class="wrapper">
+                <div class="countries-box">
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <template class="item-temp">
+        <div class="countries-box__item">
+            <a class="countries-box__item-link" href=""><img class="countries-box__item-img"></a>
+
+            <div class="countries-box__item-content">
+                <h2 class="countries-box__item-content-header"></h2>
+                <p class="countries-box__item-content-p">Population:<span
+                        class="countries-box__item-content-population"></span></p>
+                <p class="countries-box__item-content-p">Region:<span class="countries-box__item-content-region"></span>
+                </p>
+                <p class="countries-box__item-content-p">Capital:<span
+                        class="countries-box__item-content-capital"></span></p>
+            </div>
+        </div>
+    </template>
+</body>
+
+</html>
